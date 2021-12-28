@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputFile
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token="1732792873:AAHee-qXwVhK9FsJ_Vxp87WZsGSUoUlyUts")
+bot = Bot(token="")
 dp = Dispatcher(bot)
 
 def delete_first(text):
