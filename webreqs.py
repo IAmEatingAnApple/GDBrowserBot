@@ -96,15 +96,3 @@ async def get_icon(id, uname):
 
     with open(f"icons/{uname}/generated_ic.png", "wb") as f:
         f.write(generated_ic)
-
-async def main():
-    client = gd.Client()
-
-    u = await client.get_user(710192)
-    ic = u.icon_set
-    generated_ic = await gd.IconSet.generate_full(ic)
-
-    with open("test.png", "wb") as f:
-        f.write(generated_ic)
-
-#asyncio.run(main())
